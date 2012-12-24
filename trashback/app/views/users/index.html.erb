@@ -1,0 +1,17 @@
+seth is cool
+
+<div id="users">
+
+    <% @users.each do |user| %>
+          <p>
+              <%= user.name %>
+              <%= user.phone %>
+              <%= user.email %>
+            </p>
+          <% end %>
+
+</div>
+
+
+
+<%= link_to 'new', new_user_path %>
