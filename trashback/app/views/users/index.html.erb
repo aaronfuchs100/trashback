@@ -1,13 +1,37 @@
-seth is cool
-
 <div id="users">
 
     <% @users.each do |user| %>
-          <p>
-              Name: <%= link_to user.name, user %>  <br>
-              Number: <%= user.phone %> <br>
-              Email: <%= user.email %> <br>
-            </p>
+        <div class="CSSTableGenerator" >
+          	<table >
+
+          		<tr> 
+					<td>
+						Name:
+					</td>
+					<td >
+						Number:
+					</td>
+					<td>
+						Email:
+					</td>
+				</tr>
+
+				<tr>
+					<td >
+						<%= link_to user.name, user %>
+					</td>
+
+					<td >
+						<%= user.phone %>
+					</td>
+
+					<td >
+						<%= user.email %>
+					</td>
+				</tr>
+			</table >
+		</div>
+            
           <% end %>
 
 </div>
@@ -15,3 +39,64 @@ seth is cool
 
 
 <%= link_to 'new', new_user_path %>
+
+<!--<div class="CSSTableGenerator" >
+	<table >
+		<tr> 
+			<td>
+				Title 1
+			</td>
+			<td >
+				Title 2
+			</td>
+			<td>
+				Title 3
+			</td>
+		</tr>
+		<tr>
+			<td >
+				Row 1
+			</td>
+			<td>
+				Row 1
+			</td>
+			<td>
+				Row 1
+			</td>
+		</tr>
+		<tr>
+			<td >
+				Row 2
+			</td>
+			<td>
+				Row 2
+			</td>
+			<td>
+				Row 2
+			</td>
+		</tr>
+		<tr>
+			<td >
+				Row 2
+			</td>
+			<td>
+				Row 2
+			</td>
+			<td>
+				Row 2
+			</td>
+		</tr>
+		<tr>
+			<td >
+				Row 3
+			</td>
+			<td>
+				Row 3
+			</td>
+			<td>
+				Row 3
+			</td>
+		</tr>
+	</table>
+</div>
+								
