@@ -23,6 +23,8 @@ class UsersController < ApplicationController
       user_id = params[:id]
       @user = User.find(user_id)
       @item = Item.new
+      @items = Item.all
+
 
   end
 

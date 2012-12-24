@@ -15,3 +15,7 @@ seth is cool
 
 
 <%= link_to 'new', new_user_path %>
+
+<%= table_for(@users) do |t|
+      t.data
+    end %>
