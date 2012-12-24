@@ -1,1 +1,35 @@
-show.html.erb
+Name: <%= @user.name %><br>
+Phone: <%= @user.phone %><br>
+Email: <%= @user.email %><br>
+
+Add No of stompie cups
+
+<%= form_for @item do |f|  %>
+
+<div class = 'field'>
+   <%=  f.label :no_cups %>
+   <%=  f.text_field :no_cups  %>
+   <%=f.hidden_field :user_id, :value => @user.id %>
+</div>
+
+  <%= f.submit  %>
+<% end  %>
+
+All cups brought
+<br>
+<br>
+<% @user.items.each do |item| %>
+
+  <%= item.no_cups %> Cups, Brought at:
+  <%= item.created_at.to_formatted_s(:short) %>
+  <br>
+  <% end %>
+
+  <br>
+
+Total cups
+
+<br>
+
+
+<%= link_to 'all users', root_path %>

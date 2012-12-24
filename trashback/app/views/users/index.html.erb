@@ -4,9 +4,9 @@ seth is cool
 
     <% @users.each do |user| %>
           <p>
-              <%= user.name %>
-              <%= user.phone %>
-              <%= user.email %>
+              Name: <%= link_to user.name, user %>  <br>
+              Number: <%= user.phone %> <br>
+              Email: <%= user.email %> <br>
             </p>
           <% end %>
 

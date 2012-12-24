@@ -13,15 +13,19 @@
 
 ActiveRecord::Schema.define(:version => 20121224155337) do
 
-  create_table "stompies", :force => true do |t|
-    t.integer "no_cups"
-    t.integer "user_id"
+  create_table "items", :force => true do |t|
+    t.integer  "no_cups"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|
-    t.string "name"
-    t.string "phone"
-    t.string "email"
+    t.string   "name"
+    t.string   "phone"
+    t.string   "email"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
