@@ -19,13 +19,6 @@ Developer @GA in NYC
 
 /* FONTS */
 
-@font-face {
-  font-family: 'Ostrich';
-  src: url('../fonts/ostrich-light-webfont.eot?') format('eot'), 
-  url('../fonts/ostrich-light-webfont.woff') format('woff'), 
-  url('../fonts/ostrich-light-webfont.ttf') format('truetype');
-}
-
 /* Clear fix hack */
 .clearfix:after {
      content: ".";
@@ -238,7 +231,7 @@ footer{
 }    
 
 #social-media ul li a{
-     background: url('../images/socialNav.png');
+     background: url('socialNav.png');
      display: block; /*we make the <a> block, so that we can assign a width/height and */
      width: 60px;
      height:60px;
@@ -276,3 +269,9 @@ footer{
 #social-media ul li.rss a:hover {
      background-position: -180px 0px;
 }
+
+.trashHead {
+  height: 70px;
+  margin: 0 0 40px 20px;
+}
+
