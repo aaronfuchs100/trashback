@@ -32,6 +32,8 @@ class UsersController < ApplicationController
   end
 
   def destoy
+    @user = User.find(params[:id])
+    @user.destroy
   end
 
 

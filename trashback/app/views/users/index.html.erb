@@ -1,21 +1,40 @@
-seth is cool
+<style type="text/css">
+
+  .person{
+    display: inline-block;
+    border: 1px dotted black;
+    float: left;
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 1px;
+    background: white;
+    width: 200px;
+    border-radius: 5px;
+  }
+
+  .clear{
+    clear: both;
+  }
+
+</style>
 
 <div id="users">
 
     <% @users.each do |user| %>
-          <p>
+
+          <div class = "person">
               Name: <%= link_to user.name, user %>  <br>
               Number: <%= user.phone %> <br>
               Email: <%= user.email %> <br>
-            </p>
+            </div>
+
           <% end %>
+
 
 </div>
 
+<div class = "clear"></div>
 
 
 <%= link_to 'new', new_user_path %>
 
-<%= table_for(@users) do |t|
-      t.data
-    end %>
