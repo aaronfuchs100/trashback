@@ -26,6 +26,7 @@
               Name: <%= link_to user.name, user %>  <br>
               Number: <%= user.phone %> <br>
               Email: <%= user.email %> <br>
+
             </div>
 
           <% end %>
@@ -35,7 +36,11 @@
 
 <div class = "clear"></div>
 
-<%= link_to new_user_path %>
+<%= link_to "New User", new_user_path(@user) %>
+
+<a class="btn btn-mini" href="#"><i class="icon-glass"></i> glass</a>
+
+
 
 
 
