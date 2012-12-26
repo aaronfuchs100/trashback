@@ -82,15 +82,16 @@ h2 {
 
 h3 {
      text-align: center;
-     font-family: 'Ostrich', serif;
-     letter-spacing: 4px;
+     color: #30302F;
+     font-family: Impact, Arial;
+     letter-spacing: 2px;
      font-size: 30px;
-     margin-top: 10px;
+     margin-top: 0px;
 }
 
 #WWD {
   text-align: center;
-  font-family: 'Ostrich', serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 4px;
   font-size: 30px;
   margin-top: -10px;
@@ -174,7 +175,7 @@ footer{
 /*******************************************/
 
 #main-video{
-     margin-top: -30px;
+  margin-top: -26px;
 }
 
 iframe {
@@ -186,8 +187,8 @@ iframe:hover {
 }
 
 #main-content{
-     height: 358px;
-     margin-top: -30px;
+  height: 355px;
+  margin-top: -26px;
 }
 
 
@@ -225,9 +226,9 @@ iframe:hover {
      background: none;
      margin-top: 10px;
      margin-bottom: 10px;
-     border: 2px solid #C9CCC4;
+     /*border: 2px solid #C9CCC4;*/
      box-shadow: 0px 30px 31px -24px;
-     height: 359px;
+     height: 355px;
 }
 
 .colorbox1 {
@@ -238,6 +239,7 @@ iframe:hover {
      padding: 10px; 
      border-radius: 10px;
      height: 300px;
+     margin-left: 18px;
 }
 
 /******************************************
@@ -421,4 +423,11 @@ margin-left: 10px;
   filter: url(filters.svg#grayscale); 
   filter: gray; 
   -webkit-filter: grayscale(0.4);
+}
+
+.newUser {
+  padding: 10px;
+  border: 1px dotted red;
+  margin-right: auto;
+  margin-left: auto;
 }
