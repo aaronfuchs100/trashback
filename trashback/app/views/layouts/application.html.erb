@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/960_12_col.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
@@ -16,15 +18,19 @@
 <body>
 
 <header>
+  <div id="headerInside">
+      <%=link_to image_tag("theader.png", :class=> "trashHead") %>
 
       <ul id="list-nav">
-          <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-        <li><a href="#">Products</a></li>
-          <li><a href="#">Contact</a></li>
+        <li><%= link_to 'Home', root_path %></li>
+        <li><a href="#">Users</a></li>
+        <li><a href="#">Add User</a></li>
+        <li><a href="#">Blog</a></li>
+        <li id="navContact"><a href="#">Contact</a></li>
       </ul>
 
+        <div class="clear"></div>      
+  </div>
     </header>
 
     <div id="container" class="container_12">
@@ -33,9 +39,15 @@
 
     </div><!-- #container --> 
 
-      <footer>&copy; 2012 - Contact on Twitter @Trashback</footer>
+      <footer>
+
+        <!--<%=image_tag("http://bit.ly/10g1OXr", :class=> "Rez") %>-->
+
+        &copy; 2012 - Trashback | <a id="newsletter" href="http://trashback.org/engage/" target="_blank">Sign up for our newsletter</a></footer>
   </body>
 </html>
+
+
 
 
 
