@@ -1,4 +1,4 @@
-/* 
+/*
 Project Name: My Final Project
 Client: Trashback
 Author: Aaron Fuchs
@@ -7,7 +7,7 @@ Developer @GA in NYC
 
 
 /******************************************
-/* SETUP                   
+/* SETUP
 /*******************************************/
 
 /* Box Model Hack */
@@ -34,17 +34,17 @@ Developer @GA in NYC
 }
 
 .alignright {
-	float: right; 
+	float: right;
 	padding: 0 0 10px 10px; /* note the padding around a right floated image */
 }
 
 .alignleft {
-	float: left; 
+	float: left;
 	padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
 
 /******************************************
-/* BASE STYLES                   
+/* BASE STYLES
 /*******************************************/
 
 body {
@@ -94,7 +94,8 @@ h3 {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 4px;
   font-size: 30px;
-  margin-top: -10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 
@@ -102,9 +103,15 @@ p{
      font-size: 15px;
 }
 
+#content{
+  font-style: italic;
+  padding: 20px;
+  /*border: 1px dotted gray;*/
+}
+
 
 /******************************************
-/* HEADER and FOOTER                  
+/* HEADER and FOOTER
 /*******************************************/
 
 header{
@@ -125,7 +132,7 @@ ul#list-nav {
   font-size: 18px;
   letter-spacing: 0;
   padding-top: 13px;
-  
+
 }
 
 ul#list-nav li {
@@ -159,7 +166,7 @@ footer{
      height: 75px;
      text-align: center;
      background: #0C415B;
-     margin-top: 104px; 
+     margin-top: 104px;
      padding-top: 25px;
      font-family: 'Ostrich', serif;
      font-size: 20px;
@@ -171,7 +178,7 @@ footer{
 
 
 /******************************************
-/* LAYOUT                   
+/* LAYOUT
 /*******************************************/
 
 #main-video{
@@ -209,7 +216,7 @@ iframe:hover {
 
 
 /******************************************
-/* ADDITIONAL STYLES                   
+/* ADDITIONAL STYLES
 /*******************************************/
 
 
@@ -218,7 +225,7 @@ iframe:hover {
      margin-top: 10px;
      margin-bottom: 10px;
      border: 2px solid #C9CCC4;
-     padding: 10px; 
+     padding: 10px;
      box-shadow: 0px 30px 31px -24px;
 }
 
@@ -236,14 +243,14 @@ iframe:hover {
      margin-top: 5px;
      margin-bottom: 20px;
      border: 1px solid #C9CCC4;
-     padding: 10px; 
+     padding: 10px;
      border-radius: 10px;
      height: 300px;
      margin-left: 18px;
 }
 
 /******************************************
-/* SOCIAL MEDIA                   
+/* SOCIAL MEDIA
 /*******************************************/
 
 #social-media{
@@ -255,7 +262,7 @@ iframe:hover {
 
 #social-media ul li{
      float: left; /*float the elements insise social media to the left*/
-     margin: 3px; 
+     margin: 3px;
      width: 60px;
      height:60px;
      /* SCOTTT KELLUM IMAGE REPLACEMENT */
@@ -264,7 +271,7 @@ iframe:hover {
           overflow: hidden;
 
 
-}    
+}
 
 #social-media ul li a{
      background: url('socialNav.png');
@@ -308,23 +315,23 @@ iframe:hover {
 
 .trashHead {
   height: 32px;
-  filter: url(filters.svg#grayscale); 
-  filter: gray; 
+  filter: url(filters.svg#grayscale);
+  filter: gray;
   -webkit-filter: grayscale(0.7);
   float: left;
   margin: 4px 362px 0 0;
 /*
- filter: url(filters.svg#grayscale); 
-  filter: gray; 
-  -webkit-filter: grayscale(1); 
+ filter: url(filters.svg#grayscale);
+  filter: gray;
+  -webkit-filter: grayscale(1);
  Makes image greyscale */
 
 }
 
 .trashHead:hover {
   height: 32px;
-  filter: url(filters.svg#grayscale); 
-  filter: gray; 
+  filter: url(filters.svg#grayscale);
+  filter: gray;
   -webkit-filter: grayscale(0.0);
   float: left;
   margin: 4px 362px 0 0;
@@ -372,8 +379,8 @@ margin-left: 10px;
   margin-right: -4px;
   border: 1px solid white;
   border-radius: 10px;
-  filter: url(filters.svg#grayscale); 
-  filter: gray; 
+  filter: url(filters.svg#grayscale);
+  filter: gray;
   -webkit-filter: grayscale(0.9);
 }
 
@@ -384,8 +391,8 @@ margin-left: 10px;
   margin-right: -4px;
   border: 1px solid white;
   border-radius: 10px;
-  filter: url(filters.svg#grayscale); 
-  filter: gray; 
+  filter: url(filters.svg#grayscale);
+  filter: gray;
   -webkit-filter: grayscale(0.0);
 }
 
@@ -411,8 +418,8 @@ margin-left: 10px;
   height: 150px;
   margin-left: 25px;
   margin-top: 20px;
-  filter: url(filters.svg#grayscale); 
-  filter: gray; 
+  filter: url(filters.svg#grayscale);
+  filter: gray;
   -webkit-filter: grayscale(0.4);
 }
 
@@ -420,8 +427,8 @@ margin-left: 10px;
   height: 150px;
   margin-left: 25px;
   margin-top: 20px;
-  filter: url(filters.svg#grayscale); 
-  filter: gray; 
+  filter: url(filters.svg#grayscale);
+  filter: gray;
   -webkit-filter: grayscale(0.4);
 }
 
