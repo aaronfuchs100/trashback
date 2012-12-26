@@ -172,6 +172,7 @@ footer{
      font-size: 20px;
      color: white;
      padding-top: 20px;
+     clear: both;
 
 }
 
@@ -212,6 +213,7 @@ iframe:hover {
   padding-top: 40px;
   margin-top: -20px;
   box-shadow: 0px 0px 45px -8px;
+
 }
 
 
@@ -432,12 +434,6 @@ margin-left: 10px;
   -webkit-filter: grayscale(0.4);
 }
 
-.newUser {
-  padding: 10px;
-  border: 1px dotted red;
-  margin: 0 auto;
-  display: inline-block;
-}
 
 #newHeader {
   height: 50px;
@@ -453,9 +449,9 @@ margin-left: 10px;
   padding: 10px;
   border: 1px solid #C9C9C9;
   display: inline-block;
-  width: 537px;
+  width: 550px;
   border-radius: 10px;
-  margin: 15px 0 0 222px;
+  margin: 15px 0 0 215px;
 }
 
 .newNames {

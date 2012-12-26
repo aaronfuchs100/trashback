@@ -7,7 +7,12 @@ Trashback::Application.routes.draw do
   root :to => 'home#index'
   get '/contact' => 'home#contact'
 
-  resources :users
+  resources :users do
+      collection do
+        post 'search'
+      end
+    end
+
   resources :items
 
 

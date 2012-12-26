@@ -1,47 +1,16 @@
-<style type="text/css">
 
-  .person{
-    display: inline-block;
-    border: 1px dotted black;
-    float: left;
-    margin: 10px;
-    padding: 5px;
-    box-shadow: 1px;
-    background: white;
-    width: 200px;
-    border-radius: 5px;
-  }
-
-  .clear{
-    clear: both;
-  }
-
-  #users{
-    font-size: 14px;
-  }
-
-</style>
+<%= render 'search' %>
 
 <div id="users">
-
-    <% @users.each do |user| %>
-
-          <div class = "person">
-              <i class="icon-user"> </i> | <%= link_to user.name, user %>  <br>
-              <i class="icon-home"> </i> | <%= user.phone %> <br>
-              <i class="icon-envelope"> </i> | <%= user.email %> <br>
-
-            </div>
-
-          <% end %>
-
-
+  <%= render :partial => 'users', :locals => {:users => @users} %>
 </div>
 
 <div class = "clear"></div>
 
 
-<%= link_to "New User", new_user_path(@user) %>
+
+
+
 
 
 

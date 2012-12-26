@@ -40,5 +40,15 @@ class UsersController < ApplicationController
     @user.destroy
   end
 
+  def search
+    query = params[:query]
+    if query.present?
+      @users = User.text_search(query)
+    else
+      @users = User.all
+    end
+  end
+
+
 
 end
