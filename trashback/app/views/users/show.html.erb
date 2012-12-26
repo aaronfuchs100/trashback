@@ -1,8 +1,13 @@
-Name: <%= @user.name %><br>
-Phone: <%= @user.phone %><br>
-Email: <%= @user.email %><br>
+<div id="newHeader">
+  <h1 class="newNames"><%= @user.name %></h1>
+</div>
 
-Add No of stompie cups
+<div class="showUser">
+  <div id="showUser2">
+<p class="newNames"><strong>Phone:</strong> <%= @user.phone %><br></p>
+<p class="newNames"><strong>Email:</strong> <%= @user.email %><br><br></p>
+
+<strong>Add  number of stompie cups:</strong>
 
 <%= form_for @item do |f|  %>
 
@@ -15,9 +20,9 @@ Add No of stompie cups
   <%= f.submit  %>
 <% end  %>
 
-All cups brought
 <br>
-<br>
+
+<strong>All cups brought</strong>
 <% @user.items.each do |item| %>
 
   <%= item.no_cups %> Cups, Brought at:
@@ -27,15 +32,15 @@ All cups brought
 
   <br>
 
-Total cups
-
   <%= @user.items.sum(:no_cups) %>
 
-Total cups overall
+<br><br>
 
-
+<strong>Total cups overall</strong><br>
 
 <br>
 
-
 <%= link_to 'all users', users_path %>
+  </div>
+<%=image_tag("http://bit.ly/W1EvJC", :class=> "cigButt") %>
+</div>

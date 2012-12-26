@@ -239,10 +239,10 @@ iframe:hover {
 }
 
 .colorbox1 {
-     background: #c6e3e6;
+     background: #E5EBEA;
      margin-top: 5px;
      margin-bottom: 20px;
-     border: 1px solid #C9CCC4;
+     border: 2px solid #DAE4E3;
      padding: 10px;
      border-radius: 10px;
      height: 300px;
@@ -397,27 +397,27 @@ margin-left: 10px;
 }
 
 .stompie {
-  height: 178px;
-  margin-left: 26px;
-  margin-top: 7px;
+  height: 164px;
+  margin-left: 21px;
+  margin-top: 23px;
   filter: url(filters.svg#grayscale);
   filter: gray;
   -webkit-filter: grayscale(0.4);
 }
 
 .tbackBin {
-  height: 178px;
+  height: 195px;
   filter: url(filters.svg#grayscale);
   filter: gray;
   -webkit-filter: grayscale(0.4);
-  margin-left: 10px;
-  margin-top: 4px;
+  margin-left: -1px;
+  margin-top: 12px;
 }
 
 .beer {
   height: 150px;
-  margin-left: 25px;
-  margin-top: 20px;
+  margin-left: 17px;
+  margin-top: 33px;
   filter: url(filters.svg#grayscale);
   filter: gray;
   -webkit-filter: grayscale(0.4);
@@ -425,8 +425,8 @@ margin-left: 10px;
 
 .recycle {
   height: 150px;
-  margin-left: 25px;
-  margin-top: 20px;
+  margin-left: 17px;
+  margin-top: 35px;
   filter: url(filters.svg#grayscale);
   filter: gray;
   -webkit-filter: grayscale(0.4);
@@ -435,6 +435,57 @@ margin-left: 10px;
 .newUser {
   padding: 10px;
   border: 1px dotted red;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
+  display: inline-block;
 }
+
+#newHeader {
+  height: 50px;
+  width: 100%;
+  background-color: #EEEEEE;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 4px solid #C6C6C6;
+  margin-top: -40px;
+}
+
+.showUser {
+  padding: 10px;
+  border: 1px solid #C9C9C9;
+  display: inline-block;
+  width: 537px;
+  border-radius: 10px;
+  margin: 15px 0 0 222px;
+}
+
+.newNames {
+  padding-bottom: 5px;
+}
+
+h1.newNames {
+  font-family: Impact;
+  font-size: 25px;
+  color: #65655F;
+  margin-left: -34px;
+  margin-top: 7px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+#showUser2 {
+  float:left;
+}
+
+.cigButt {
+  float:right;
+}
+
+.stepPar {
+  text-align: center;
+  margin-top: -10px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
