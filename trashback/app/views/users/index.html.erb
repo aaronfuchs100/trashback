@@ -16,6 +16,10 @@
     clear: both;
   }
 
+  #users{
+    font-size: 14px;
+  }
+
 </style>
 
 <div id="users">
@@ -23,9 +27,9 @@
     <% @users.each do |user| %>
 
           <div class = "person">
-              Name: <%= link_to user.name, user %>  <br>
-              Number: <%= user.phone %> <br>
-              Email: <%= user.email %> <br>
+              <i class="icon-user"> </i> | <%= link_to user.name, user %>  <br>
+              <i class="icon-home"> </i> | <%= user.phone %> <br>
+              <i class="icon-envelope"> </i> | <%= user.email %> <br>
 
             </div>
 
@@ -35,11 +39,11 @@
 </div>
 
 <div class = "clear"></div>
-<i class="icon-search">a</i>
+
 
 <%= link_to "New User", new_user_path(@user) %>
 
-<a class="btn btn-mini" href="#"><i class="icon-glass"></i> glass</a>
+
 
 
 
